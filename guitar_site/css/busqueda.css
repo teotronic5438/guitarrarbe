@@ -1,0 +1,98 @@
+.busquedaguitarra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.elegirguitarra {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.buscartipo {
+    width: 48%;
+}
+
+.seleccionarmarca {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+select,
+input[type="checkbox"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+select {
+    width: 100%;
+}
+
+input[type="checkbox"] {
+    display: inline;  
+    margin-right: 10px;
+}
+button {
+    background-color: #FFA726;
+    color: #000;
+    border: 1px solid #000 ;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.confirmarseleccion {
+    width: 20%;
+}
+
+.guitar-info {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#guitar-image {
+    max-width: 300px; /* Ajusta según el tamaño de tu imagen */
+    margin-bottom: 10px;
+}
+
+#guitar-details {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 80%;
+    margin-top: 10px;
+}
+
+.guitar-videos {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 10px;
+}
+@media (max-width:767px) {
+    .busquedaguitarra {
+        flex-direction: column;
+    }
+    .confirmarseleccion{
+        width: 100%;
+        text-align: center;
+    }
+    h1{
+        font-size: 1.5em;
+    }
+}
+

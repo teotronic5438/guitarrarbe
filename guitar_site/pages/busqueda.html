@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/favicon.jpg" type="image/jpeg">
+    <title>Busqueda</title>
+    <!-- configuracion del menu en header -->
+    <link rel="stylesheet" href="../css/comparacion.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- estilos propios de busqueda -->
+    <link rel="stylesheet" href="../css/busqueda.css">
+    <!-- menu hamburguesa -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <img src="../img/—Pngtree—guitar_1368015.png" alt="Guitarra puntiaguda">
+        <h1>Busqueda</h1>
+        <img src="../img/—Pngtree—guitar_1368015.png" alt="Guitarra puntiaguda">
+    </header>
+    <nav>
+        <button type="" class="toggle" id="boton">
+			<i class="fas fa-bars"></i>
+		</button>
+        <ul id="menu" class="botonera-lista">
+            <li class="button botonera-lista-item"><a href="../resources/index.html">Home</a></li>
+            <li class="button botonera-lista-item"><a href="./busqueda.html">Busqueda</a></li>
+            <li class="button botonera-lista-item"><a href="./comparacion.html">Comparación</a></li>
+            <li class="button botonera-lista-item"><a href="./tutoriales.html">Tutoriales</a></li>
+            <li class="button botonera-lista-item"><a href="./contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="busquedaguitarra">
+            <div class="elegirguitarra">
+                <div class="buscartipo">
+                    <h1>Buscar y seleccionar tipo de guitarra</h1>
+                    <div class="caracteristicas">
+                        <label for="guitar-tipo">Tipo de guitarra:</label>
+                        <select id="guitar-tipo">
+                            <option value="Electrica">Eléctrica</option>
+                            <option value="Criolla">Criolla</option>
+                            <option value="Acustica">Acústica</option>
+                            <option value="Otras">Otras guitarras</option>
+                        </select>
+        
+                        <label for="guitar-forma">Forma de guitarra:</label>
+                        <select id="guitar-forma">
+                            <option value="Estandar">Estándar</option>
+                            <option value="Flamenco">Flamenco</option>
+                            <option value="LesPaul">Les Paul</option>
+                            <option value="Stratocaster">Stratocaster</option>
+                            <option value="Hollow">Hollow</option>
+                            <option value="Jazz">Jazz</option>
+                            <option value="Dreadnought">Dreadnought</option>
+                            <option value="Classic">Classic</option>
+                            <option value="Jumbo">Jumbo</option>
+                            <option value="GC">GC</option>
+                            <option value="Electro-acustica">Electro-acústica</option>
+                            <option value="SinEspecificar">Sin especificar</option>
+                        </select>
+        
+                        <label for="cantcuerdas">Cantidad de cuerdas:</label>
+                        <select id="cantcuerdas">
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="12">12</option>
+                            <option value="SinEspecificar">Sin especificar</option>
+                        </select>
+        
+                        <label for="origen">Origen:</label>
+                        <select id="origen">
+                            <option value="Argentina">Argentina</option>
+                            <option value="Alemania">Alemania</option>
+                            <option value="Espania">España</option>
+                            <option value="EstadosUnidos">Estados Unidos</option>
+                            <option value="Japon">Japón</option>
+                            <option value="Mexico">México</option>
+                            <option value="China">China</option>
+                            <option value="SinEspecificar">Sin especificar</option>
+                        </select>
+        
+                        <button type="button">Ok</button>
+                    </div>
+                </div>
+        
+                <div class="seleccionarmarca">
+                    <h1>Seleccionar la marca</h1>
+                        <label>
+                            <input type="checkbox" id="sin-marca" value="Sin Marca">
+                            Sin marca
+                        </label>
+                        <label>
+                            <input type="checkbox" id="cielito" value="Cielito">
+                            Cielito
+                        </label>
+                        <label>
+                            <input type="checkbox" id="fender" value="Fender">
+                            Fender
+                        </label>
+                        <label>
+                            <input type="checkbox" id="gibson" value="Gibson">
+                            Gibson
+                        </label>
+                        <label>
+                            <input type="checkbox" id="jackson" value="Jackson">
+                            Jackson
+                        </label>
+                        <label>
+                            <input type="checkbox" id="yamaha" value="Yamaha">
+                            Yamaha
+                        </label>
+                    <button type="button">Ok</button>
+                </div>
+            </div>
+    
+            <div class="confirmarseleccion">
+                <h1>Has seleccionado:</h1>
+                <ul>
+                    <li>Tipo de guitarra: <span id="selected-tipo"></span></li>
+                    <li>Forma de guitarra: <span id="selected-forma"></span></li>
+                    <li>Cantidad de cuerdas: <span id="selected-cuerdas"></span></li>
+                    <li>Origen: <span id="selected-origen"></span></li>
+                    <li>Marca: <span id="selected-marca"></span></li>
+                </ul>
+                <button type="button">Confirmar</button>
+            </div>
+        </div>
+        <div class="guitar-info">
+            <h1 id="guitar-name">Nombre de la guitarra</h1>
+            <p id="guitar-brand">Marca</p>
+            <img id="guitar-image" src="" alt="Imagen de la guitarra">
+            <p id="guitar-description">Breve explicación</p>
+            <div id="guitar-details">Información detallada</div>
+            <div class="guitar-videos">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="copy">&copy; Proyecto desarrollado por el grupo 11 de Codo a Codo Fullstack Python</p>
+        <i class='bx bxl-instagram'></i>
+        <i class='bx bxl-facebook' ></i>
+        <i class='bx bxl-twitter' ></i>
+    </footer>
+    <script src="../js/guitarras.js"></script>
+    <script type="text/javascript" src="../js/hamburguesa.js"></script>
+</body>
+</html>

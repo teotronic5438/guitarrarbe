@@ -1,0 +1,290 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h2, h4{
+    background-color: beige
+}
+header img{
+    height: 50px;
+}
+header{  
+    display: flex;
+    justify-content: space-between;
+    background-color: beige;
+    position: relative;     /*prueba de codigo*/
+    z-index: 10;            /*prueba de codigo*/
+    color: #272d4d;
+ }
+ header div, header h1{
+    margin: 10px;
+    color: #272d4d;
+ }
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #272d4d;
+    height: 30px;
+    color: white;
+    font-size: 1.5em;
+    align-items: center;
+    margin-top: 5px;
+    z-index: 10;            /*prueba de codigo*/
+}
+footer > p{
+    margin-right: 20px;
+    font-size: 0.75em;
+}
+
+section{
+    height: 150vh;
+    margin-top: 20px;
+}
+section h2, section h4 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.marca{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: antiquewhite;
+}
+article{
+    width: 250px;
+    text-align: center;
+}
+.subtitulo{
+    margin: 5px;
+}
+.form-guitarra{
+    margin: 10px;
+}
+.containers{
+    display: flex;
+    justify-content: space-evenly;
+}
+nav { 
+    background-color: #ffb350; 
+    height: 50px;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1000;            /*prueba de codigo*/
+ }
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: flex-end;
+}
+a { 
+    text-decoration: none;
+    color: azure;
+}
+
+.button{
+    margin: 5px;
+    margin-bottom: 0px;
+    padding: 10px;
+    background-color: #b83564;
+    color: azure;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+
+/*******************
+menu hamburguesa
+*******************/
+.toggle{
+    position: relative;
+	display: none;
+	background: none;
+	border: none;
+    color: white;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+}
+nav #menu{
+    transition: all 0.5s ease;
+}
+
+.imagen_guitarra{
+    height: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************
+    responsive menu hamburguesa
+****************************/
+
+@media (max-width:767px){
+    body{
+        width: 100%;
+    }
+    footer{
+        height: auto;
+        font-size: 16px;
+        padding: 5px;
+    }
+
+     /*********  hamburguesa ******/
+     nav { 
+        background-color: #b83564; 
+        display: flex;
+        height: auto;
+        position: relative;
+     }
+    nav ul{
+        flex-direction: column;
+		width: 100%;
+    }
+    a { 
+        text-decoration: none;
+        color: azure;
+    }
+    
+    #menu > .button{
+        width: 100%;
+        text-align: center;
+        color: azure;
+    
+    }
+	.botonera-lista{
+		width: 100%;
+		display: none;
+	}
+	.toggle{
+		display: inline;
+	}
+    .mostrar{
+        display: flex;
+    }
+    /*********  hamburguesa ******/
+
+    /* info guitarras */
+    .containers{
+        width: 100%;
+        display: block;
+    }
+    #informacionIzquierdaContainer, #informacionDerechaContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .containers article{
+        width: 100%;
+    }
+    article p{
+        margin: 5px;
+    }
+}
+
+
+@media (min-width:768px) and (max-width:1024px){
+    body{
+        width: 100%;
+    }
+
+     /*********  hamburguesa ******/
+     nav { 
+        background-color: #b83564; 
+        display: flex;
+        height: auto;
+        position: relative;
+     }
+    nav ul{
+        flex-direction: column;
+		width: 100%;
+    }
+    a { 
+        text-decoration: none;
+        color: azure;
+    }
+    
+    #menu > .button{
+        width: 100%;
+        text-align: center;
+        color: azure;
+    
+    }
+	.botonera-lista{
+		width: 100%;
+		display: none;
+	}
+	.toggle{
+		display: inline;
+	}
+    .mostrar{
+        display: flex;
+    }
+    /*********  hamburguesa ******/
+    .carousel {
+        width: 100vw;
+    }
+    .carousel-item img{
+        width: 100vw;
+    }
+    main{
+        height: auto;
+    }
+    footer{
+        height: auto;
+        font-size: 20px;
+        padding: 5px;
+    }
+}

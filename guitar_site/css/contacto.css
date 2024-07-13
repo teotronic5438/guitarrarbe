@@ -1,0 +1,112 @@
+main { 
+    display: flex;
+    flex-wrap: wrap;
+}
+.formulario-contacto {
+    width: 50%;
+    box-sizing:border-box ;
+    margin: 20px auto;
+    padding: 30px;
+    background: #f7f7f7;
+    border-radius: 8px;
+}
+
+.formulario-contacto h1,
+.informacion-contacto h2 {
+    text-align: center;
+    color: black;
+}
+
+.formulario-contacto form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-contacto label {
+    margin-top: 15px;
+}
+
+.formulario-contacto input[type="text"],
+.formulario-contacto input[type="email"]{
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid rgb(212, 210, 210);
+    border-radius: 4px;
+}
+
+.formulario-contacto textarea {
+    height: 60px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid rgb(212, 210, 210);
+    border-radius: 4px;
+}
+.formulario-contacto ::placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formulario-contacto input[type="submit"]{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    padding: 20px ;
+    background-color: rgb(184, 53, 100);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.formulario-contacto input[type="reset"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: grey;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor:pointer;
+}
+
+.formulario-contacto input[type="submit"]:hover{
+    background-color: rgb(202, 0, 74);
+}
+.formulario-contacto input[type="reset"]:hover {
+    background-color: rgb(37, 36, 36) ;
+}
+
+.informacion-contacto {
+    width:40%;
+    box-sizing: border-box;
+    margin: 30px auto;
+    padding: 20px;
+    background: #f7f7f7;
+    border-radius: 8px;
+}
+
+.informacion-contacto p {
+    text-align: center;
+    color: rgb(37, 36, 36);
+}
+
+.informacion-contacto a {
+    color: rgb(184, 53, 100);
+    text-decoration: none;
+}
+
+.informacion-contacto a:hover {
+    text-decoration: underline;
+}
+.informacion-contacto iframe {
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        margin-top: 20px; 
+        width: 100%;
+}
+@media (max-width:767px) {
+    main {
+        flex-direction: column;
+    }
+    .informacion-contacto,.formulario-contacto {
+        width: 100%;
+    }
+
+}

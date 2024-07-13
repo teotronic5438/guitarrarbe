@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/favicon.jpg" type="image/jpeg">
+    <title>Comparación de guitarras</title>
+    <link rel="stylesheet" href="../css/comparacion.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    
+    <!-- menu hamburguesa -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+</head>
+<body>
+    <header>
+        <img src="../img/—Pngtree—guitar_1368015.png" alt="Guitarra puntiaguda">
+        <h1>Comparación de guitarras</h1>
+        <img src="../img/—Pngtree—guitar_1368015.png" alt="Guitarra puntiaguda">
+    </header>
+    <nav>
+        <button type="" class="toggle" id="boton">
+			<i class="fas fa-bars"></i>
+		</button>
+        <ul id="menu" class="botonera-lista">
+            <li class="button botonera-lista-item"><a href="../resources/index.html">Home</a></li>
+            <li class="button botonera-lista-item"><a href="./busqueda.html">Busqueda</a></li>
+            <li class="button botonera-lista-item"><a href="./comparacion.html">Comparación</a></li>
+            <li class="button botonera-lista-item"><a href="./tutoriales.html">Tutoriales</a></li>
+            <li class="button botonera-lista-item"><a href="./contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2>Elige tus guitarras</h2>
+        <h4 class="subtitulo">Selecciona una guitarra de la lista y compara sus caracteristicas</h4>
+        <div class="marca">
+            <form action="#" class="form-guitarra">
+                <label for="guitarras_izq">Guitarra 1</label>
+                <select name="guitarras_izq" id="guitarras_izq" onchange="mostrar_info_guitarra('izquierda')">
+                    <option value= "#">Elija una opción</option>
+                    <option value="Fender Stratocaster">Fender Stratocaster</option>
+                    <option value="Jackson Soloist">Jackson Soloist</option>
+                    <option value="Gibson Les Paul">Gibson Les Paul</option>
+                    <option value="Ibanez RG">Ibanez RG</option>
+                    <option value="Gibson SG">Gibson SG</option>
+                    <option value="PRS Custom 24">PRS Custom 24</option>
+                    <option value="Martin D-28">Martin D-28</option>
+                    <option value="Taylor 814ce">Taylor 814ce</option>
+                    <option value="Yamaha Pacifica">Yamaha Pacifica</option>
+                    <option value="Epiphone Casino">Epiphone Casino</option>
+                    <option value="Gretsch White Falcon">Gretsch White Falcon</option>
+                    <option value="Rickenbacker 360">Rickenbacker 360</option>
+                    <option value="ESP Eclipse">ESP Eclipse</option>
+                    <option value="Guild Starfire IV">Guild Starfire IV</option>
+                    <option value="Ovation Adamas">Ovation Adamas</option>
+                    <option value="Washburn N4">Washburn N4</option>
+                    <option value="Music Man JP6">Music Man JP6</option>
+                    <option value="Gibson ES-335">Gibson ES-335</option>
+                    <option value="Charvel San Dimas">Charvel San Dimas</option>
+                </select>
+            </form>
+            <form action= "#" class="form-guitarra">
+                <label for="guitarras_der">Guitarra 2</label>
+                <select name="guitarras_der" id="guitarras_der" onchange="mostrar_info_guitarra('derecha')">
+                    <option value= "#">Elija una opción</option>
+                    <option value= "Fender Stratocaster">Fender Stratocaster</option>
+                    <option value="Jackson Soloist">Jackson Soloist</option>
+                    <option value="Gibson Les Paul">Gibson Les Paul</option>
+                    <option value="Ibanez RG">Ibanez RG</option>
+                    <option value="Gibson SG">Gibson SG</option>
+                    <option value="PRS Custom 24">PRS Custom 24</option>
+                    <option value="Martin D-28">Martin D-28</option>
+                    <option value="Taylor 814ce">Taylor 814ce</option>
+                    <option value="Yamaha Pacifica">Yamaha Pacifica</option>
+                    <option value="Epiphone Casino">Epiphone Casino</option>
+                    <option value="Gretsch White Falcon">Gretsch White Falcon</option>
+                    <option value="Rickenbacker 360">Rickenbacker 360</option>
+                    <option value="ESP Eclipse">ESP Eclipse</option>
+                    <option value="Guild Starfire IV">Guild Starfire IV</option>
+                    <option value="Ovation Adamas">Ovation Adamas</option>
+                    <option value="Washburn N4">Washburn N4</option>
+                    <option value="Music Man JP6">Music Man JP6</option>
+                    <option value="Gibson ES-335">Gibson ES-335</option>
+                    <option value="Charvel San Dimas">Charvel San Dimas</option>
+                </select>
+            </div>
+        <div class="containers">
+            <div id="informacionIzquierdaContainer" style="display:none;">
+                <!--Info luego de selección-->
+            </div>
+        
+            <div id="informacionDerechaContainer" style="display:none;">
+                <!--Info luego de selección-->
+            </div>
+        </div>
+        
+    </section>
+    <footer>
+        <p class="copy">&copy; Proyecto desarrollado por el grupo 11 de Codo a Codo Fullstack Python</p>
+        <i class='bx bxl-instagram'></i>
+        <i class='bx bxl-facebook' ></i>
+        <i class='bx bxl-twitter' ></i>
+    </footer>
+    <script type="text/javascript" src="../js/hamburguesa.js"></script>
+    <script type="text/javascript" src="../js/comparacion.js"></script>
+</body>
+</html>

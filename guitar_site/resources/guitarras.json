@@ -1,0 +1,184 @@
+{
+    "guitars": [
+        {
+            "name": "Fender Stratocaster",
+            "type": "Eléctrica",
+            "music_style": "Rock, Blues",
+            "recommended_brand": "Fender",
+            "image_url": "https://m.media-amazon.com/images/I/51E3cGZ4wSL._AC_SL1200_.jpg",
+            "description": "Una de las guitarras eléctricas más icónicas, conocida por su versatilidad y sonido claro.",
+            "artist": "Jimi Hendrix"
+        },
+        {
+            "name": "Gibson Les Paul",
+            "type": "Eléctrica",
+            "music_style": "Rock, Blues",
+            "recommended_brand": "Gibson",
+            "image_url": "https://media.guitarcenter.com/is/image/MMGS7/L54489000002000-02-2000x2000.jpg",
+            "description": "Famosa por su sonido cálido y sostenido, muy popular en el rock y el blues.",
+            "artist": "Jimmy Page"
+        },
+        {
+            "name": "Ibanez RG",
+            "type": "Eléctrica",
+            "music_style": "Metal, Rock",
+            "recommended_brand": "Ibanez",
+            "image_url": "https://dcdn.mitiendanube.com/stores/001/159/718/products/ibanez-grx70qasb-01-a1-794fe57ebe2a25fd1716310539749463-1024-1024.jpg",
+            "description": "Conocida por su diseño ergonómico y su capacidad para estilos de alta ganancia.",
+            "artist": "Steve Vai"
+        },
+        {
+            "name": "Gibson SG",
+            "type": "Eléctrica",
+            "music_style": "Rock, Hard Rock",
+            "recommended_brand": "Gibson",
+            "image_url": "https://i.ebayimg.com/thumbs/images/g/0joAAOSwoLtgavrB/s-l1200.jpg",
+            "description": "Caracterizada por su diseño ligero y doble corte, ideal para riffs rápidos.",
+            "artist": "Angus Young"
+        },
+        {
+            "name": "Fender Telecaster",
+            "type": "Eléctrica",
+            "music_style": "Country, Rock",
+            "recommended_brand": "Fender",
+            "image_url": "https://http2.mlstatic.com/D_NQ_NP_678832-MLA31020662554_062019-O.webp",
+            "description": "Una guitarra versátil con un sonido brillante y claro, popular en el country y el rock.",
+            "artist": "Bruce Springsteen"
+        },
+        {
+            "name": "PRS Custom 24",
+            "type": "Eléctrica",
+            "music_style": "Rock, Blues",
+            "recommended_brand": "PRS",
+            "image_url": "https://http2.mlstatic.com/D_NQ_NP_626410-MLA51456382548_092022-O.webp",
+            "description": "Conocida por su alta calidad y sonido equilibrado, utilizada en una variedad de estilos.",
+            "artist": "Carlos Santana"
+        },
+        {
+            "name": "Martin D-28",
+            "type": "Acústica",
+            "music_style": "Folk, Country",
+            "recommended_brand": "Martin",
+            "image_url": "https://http2.mlstatic.com/D_NQ_NP_2X_803711-MLU74273548608_022024-V.webp",
+            "description": "Una de las guitarras acústicas más respetadas, famosa por su tono rico y resonante.",
+            "artist": "Neil Young"
+        },
+        {
+            "name": "Taylor 814ce",
+            "type": "Acústica",
+            "music_style": "Folk, Pop",
+            "recommended_brand": "Taylor",
+            "image_url": "https://www.stringsfield.com/17285-large_default/guitarra-acustica-taylor-814ce.jpg",
+            "description": "Destacada por su sonido claro y brillante, perfecta para estilos acústicos modernos.",
+            "artist": "Jason Mraz"
+        },
+        {
+            "name": "Yamaha Pacifica",
+            "type": "Eléctrica",
+            "music_style": "Rock, Blues",
+            "recommended_brand": "Yamaha",
+            "image_url": "https://es.yamaha.com/es/files/PAC-overview-sp_dca4996b8ae31a7a39d3836dfa97b19d.jpg?impolicy=resize&imwid=770&imhei=750",
+            "description": "Una guitarra accesible y versátil, adecuada para una amplia gama de géneros.",
+            "artist": "Mike Stern"
+        },
+        {
+            "name": "Epiphone Casino",
+            "type": "Eléctrica (semi-hueca)",
+            "music_style": "Rock, Blues",
+            "recommended_brand": "Epiphone",
+            "image_url": "https://http2.mlstatic.com/D_NQ_NP_859238-MLA51953849827_102022-O.webp",
+            "description": "Famosa por su tono cálido y resonante, popular en el rock clásico.",
+            "artist": "John Lennon"
+        },
+        {
+            "name": "Gretsch White Falcon",
+            "type": "Eléctrica (semi-hueca)",
+            "music_style": "Rockabilly, Jazz",
+            "recommended_brand": "Gretsch",
+            "image_url": "https://i.ebayimg.com/thumbs/images/g/px0AAOSwBlVirSDh/s-l640.jpg",
+            "description": "Conocida por su aspecto llamativo y sonido distintivo, ideal para rockabilly y jazz.",
+            "artist": "Chet Atkins"
+        },
+        {
+            "name": "Rickenbacker 360",
+            "type": "Eléctrica",
+            "music_style": "Rock, Pop",
+            "recommended_brand": "Rickenbacker",
+            "image_url": "https://i.ebayimg.com/thumbs/images/g/yiwAAOSwnu9lss8d/s-l1200.jpg",
+            "description": "Reconocida por su tono jangly y su diseño distintivo, popular en el rock y el pop.",
+            "artist": "Tom Petty"
+        },
+        {
+            "name": "Jackson Soloist",
+            "type": "Eléctrica",
+            "music_style": "Metal, Rock",
+            "recommended_brand": "Jackson",
+            "image_url": "https://http2.mlstatic.com/D_NQ_NP_994346-MLU70615711521_072023-O.webp",
+            "description": "Diseñada para la velocidad y la precisión, popular en géneros de metal y rock.",
+            "artist": "Phil Collen"
+        },
+        {
+            "name": "ESP Eclipse",
+            "type": "Eléctrica",
+            "music_style": "Metal, Hard Rock",
+            "recommended_brand": "ESP",
+            "image_url": "https://http2.mlstatic.com/D_NQ_NP_623657-MLA44210546757_112020-O.webp",
+            "description": "Una guitarra de alta calidad, conocida por su sustain y tono potente.",
+            "artist": "James Hetfield"
+        },
+        {
+            "name": "Guild Starfire IV",
+            "type": "Eléctrica (semi-hueca)",
+            "music_style": "Blues, Jazz",
+            "recommended_brand": "Guild",
+            "image_url": "https://http2.mlstatic.com/D_NQ_NP_622885-MLA40245956489_122019-O.webp",
+            "description": "Popular en el blues y el jazz por su tono cálido y resonante.",
+            "artist": "Buddy Guy"
+        },
+        {
+            "name": "Ovation Adamas",
+            "type": "Acústica",
+            "music_style": "Pop, Rock",
+            "recommended_brand": "Ovation",
+            "image_url": "https://www.heavenimagenes.com/heavencommerce/e11e0483-99c8-4ad2-b3a9-bfb26fc81402/images/v2/OVATION/26950_medium.jpg",
+            "description": "Con su distintivo diseño y tono claro, es ideal para actuaciones en vivo.",
+            "artist": "Melissa Etheridge"
+        },
+        {
+            "name": "Washburn N4",
+            "type": "Eléctrica",
+            "music_style": "Rock, Metal",
+            "recommended_brand": "Washburn",
+            "image_url": "https://i.pinimg.com/originals/3c/64/45/3c644555b92bcaaa0dd7c5aeb4ed5f00.jpg",
+            "description": "Diseñada en colaboración con Nuno Bettencourt, conocida por su jugabilidad y tono afilado.",
+            "artist": "Nuno Bettencourt"
+        },
+        {
+            "name": "Music Man JP6",
+            "type": "Eléctrica",
+            "music_style": "Progressive Rock, Metal",
+            "recommended_brand": "Ernie Ball Music Man",
+            "image_url": "https://m.media-amazon.com/images/I/51ZuUUnqzeL._AC_UF1000,1000_QL80_.jpg",
+            "description": "Diseñada en colaboración con John Petrucci, perfecta para estilos técnicos y progresivos.",
+            "artist": "John Petrucci"
+        },
+        {
+            "name": "Gibson ES-335",
+            "type": "Eléctrica (semi-hueca)",
+            "music_style": "Blues, Jazz",
+            "recommended_brand": "Gibson",
+            "image_url": "https://i.ebayimg.com/thumbs/images/g/YjsAAOSwwfZl4CkI/s-l1200.jpg",
+            "description": "Famosa por su tono equilibrado y resonante, ideal para blues y jazz.",
+            "artist": "Chuck Berry"
+        },
+        {
+            "name": "Charvel San Dimas",
+            "type": "Eléctrica",
+            "music_style": "Rock, Metal",
+            "recommended_brand": "Charvel",
+            "image_url": "https://www.fender.cl/media/catalog/product/cache/1/image/800x800/9df78eab33525d08d6e5fb8d27136e95/g/e/ge629_2965831518v1.jpg",
+            "description": "Conocida por su rapidez y comodidad, muy popular entre los guitarristas de rock y metal.",
+            "artist": "Eddie Van Halen"
+        }
+    ]
+}

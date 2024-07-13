@@ -1,0 +1,445 @@
+body{
+    background-color: beige;
+}
+section h2, section h3 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+/* main{
+    height: 84vh;
+} */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    /* Solo para definir el ancho específico si es necesario */
+    width: 100%;
+    margin-bottom: 0px;
+}
+  
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    position: relative;
+    flex: 0 0 100%;
+    text-align: center; 
+}
+
+/* .carousel-image {
+    width: 100%;
+    display: block;
+} */
+
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* Fondo semitransparente para el texto */
+    background-color: rgba(0, 0, 0, 0); 
+    color: white;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #FFA726;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px; 
+}
+
+.next {
+    right: 10px;
+}
+
+/* footer{
+    position: relative;
+    margin-top: 22px;
+} */
+
+/*******************
+menu hamburguesa
+*******************/
+.toggle{
+    position: relative;
+	display: none;
+	background: none;
+	border: none;
+    color: white;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+}
+nav #menu{
+    transition: all 0.5s ease;
+}
+
+/*******************
+    subtitulos
+*******************/
+.subitulo{
+    margin: 0;
+    margin-top: 10px;
+    height: auto;
+    background-color: #ffb350;
+}
+.subitulo-h2, .subitulo-h3{
+    margin: 0;
+    padding: 0;
+    background-color: #ffb350;
+    padding: 10px;
+    color: #272d4d;
+    /* color: white; */
+    /* color: #b83564; */
+    font-family: sans-serif;
+}
+
+
+/*******************
+    galeria
+*******************/
+.galeria{
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    display: grid;
+    /* outline: 5px solid red; */
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 20px;
+    gap: 30px;
+}
+.card{
+    /* outline: 5px solid; */
+    width: 100%;
+    box-shadow: 5px 5px 20px black;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+
+}
+.img-responsive{
+    display: block;
+    width: 100%;
+    height: 500px;
+    border-radius: 5px;
+    transition: all .5s ease;
+}
+.epigrafe{
+    height: 70px;
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    background: rgba(27, 27, 27, 1);
+    color: white;
+    font-family: sans-serif;
+    transition: all .5s ease;
+}
+.epigrafe h3{
+    margin: 10px;
+    font-size: 25px;
+}
+.epigrafe p{
+    font-size: 18px;
+    margin: 10px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.card:hover{
+    cursor: pointer;
+}
+.card:hover .epigrafe{
+    height: 150px;
+    bottom: 0px;
+    background: rgba(0, 0, 0, 0.8);
+}
+.card:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+.card:hover img{
+    transform: scale(1.1);
+}
+
+/*******************
+    conferencia
+*******************/
+.conferencia-charlas{
+    height: auto;
+    margin-bottom: 50px;
+}
+.conferencia{
+    width: 90%;
+    height: auto;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.formulario_orador {
+    width: 100%;
+    background-color: #FFA726;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px black;
+    color: #272d4d;
+}
+
+.formulario_orador h3 {
+    text-align: center;
+    color: #272d4d;
+    font-size: 25px;
+}
+
+.formulario_orador label {
+    display: block;
+    margin: 10px;
+    text-align: start;
+    font-weight: bold;
+}
+
+.formulario_orador input{
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: all .4s ease-in-out;
+}
+.formulario_orador input:hover{
+    /* border: 1px solid rgb(184, 53, 100); */
+    box-shadow: 8px 8px 5px rgba(184,53,100,0.8);
+}
+
+.formulario_orador button {
+    background-color: #ffb350;
+    color: #272d4d;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    width: 97%; /* Ancho completo */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    transition: all .5s ease-in-out;
+    margin: 10px auto;
+}
+
+.formulario_orador button:hover {
+    background-color: #b83564; /* Cambio de color al pasar el ratón por encima */
+    color: white;
+}
+
+.charlas {
+    text-align: center;
+}
+.charlas img{
+    width: 90%;
+    border-radius: 10px;
+}
+
+.charlas .ponente{
+    margin: 10px;
+    text-align: start;
+    padding: 5px 20px;
+    color: #272d4d;
+}
+.ponente p{
+    margin: 3px;
+}
+.charlas hr{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/***************************
+        responsive carrusel
+****************************/
+
+@media (max-width:767px){
+    body{
+        width: 100%;
+    }
+    .carousel {
+        width: 100vw;
+    }
+    .carousel-item img{
+        width: 100vw;
+    }
+    footer{
+        height: auto;
+        font-size: 16px;
+        padding: 5px;
+    }
+
+     /*********  hamburguesa ******/
+     nav { 
+        background-color: #b83564; 
+        display: flex;
+        height: auto;
+        position: sticky;
+        top: 0;
+        z-index: 1050;
+     }
+    nav ul{
+        flex-direction: column;
+		width: 100%;
+    }
+    a { 
+        text-decoration: none;
+        color: azure;
+    }
+    
+    #menu > .button{
+        width: 100%;
+        text-align: center;
+        color: azure;
+    
+    }
+	.botonera-lista{
+		width: 100%;
+		display: none;
+	}
+	.toggle{
+		display: inline;
+        z-index: 1000;
+	}
+    .mostrar{
+        display: flex;
+    }
+    /*********  hamburguesa ******/
+
+    /* galeria */
+    #galeria{
+        width: 100%;
+        height: auto;
+        /* margin: 20px auto; */
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .card{
+        width: 100%;
+
+    }
+
+    /* ponentes */
+    .conferencia-charlas{
+        width: 100%;
+        height: auto;
+        margin-bottom: 50px;
+    }
+    .conferencia-charlas .conferencia{
+        width: 90%;
+        padding: 5px;
+        height: auto;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .formulario_orador{
+        padding: 0;
+    }
+
+}
+
+@media (min-width:768px) and (max-width:1024px){
+    body{
+        width: 100%;
+    }
+
+     /*********  hamburguesa ******/
+     nav { 
+        background-color: #b83564; 
+        display: flex;
+        height: auto;
+        position: sticky;   /* probando codigo relative */
+        top: 0;             /* probando codigo */
+        z-index: 1050;      /* probando codigo */
+     }
+    nav ul{
+        flex-direction: column;
+		width: 100%;
+    }
+    a { 
+        text-decoration: none;
+        color: azure;
+    }
+    
+    #menu > .button{
+        width: 100%;
+        text-align: center;
+        color: azure;
+    
+    }
+	.botonera-lista{
+		width: 100%;
+		display: none;
+	}
+	.toggle{
+		display: inline;
+	}
+    .mostrar{
+        display: flex;
+    }
+    /*********  hamburguesa ******/
+    .carousel {
+        width: 100vw;
+    }
+    .carousel-item img{
+        width: 100vw;
+    }
+    main{
+        height: auto;
+    }
+    footer{
+        height: auto;
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    /* galeria */
+    #galeria{
+        width: 100%;
+        height: auto;
+        /* margin: 20px auto; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    .card{
+        width: 100%;
+    }
+
+    /* ponentes */
+    .conferencia-charlas{
+        height: auto;
+        margin-bottom: 50px;
+    }
+    .conferencia{
+        width: 90%;
+        height: auto;
+        margin: 30px auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
